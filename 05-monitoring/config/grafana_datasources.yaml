@@ -1,0 +1,12 @@
+apiVersion: 1
+
+datasources:
+  - name: MonitoringPostgreSQL
+    type: postgres
+    url: db:5432  # Make sure to correct the URL if it had a typo
+    user: postgres
+    secureJsonData:
+      password: 'example'
+    jsonData:
+      database: test
+      sslmode: 'disable'
